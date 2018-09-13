@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>グリッドメーカー</title>
+</head>
+
+<body>
+  <h1>グリッドメーカー</h1>
+  <form>
+    <p>グリッドの幅（5～2048）</p>
+    <input type="text" id="grid-width" value="60">
+    <p>グリッドの高さ（5～2048）</p>
+    <input type="text" id="grid-height" value="100">
+    <p>グリッドの横数（1～400、最大2048px）</p>
+    <input type="text" id="grid-x" value="10">
+    <p>グリッドの縦数（1～400、最大2048px）</p>
+    <input type="text" id="grid-y" value="6">
+    <br>
+    <input type="button" value="作成" onclick="GenerateGrid();">
+  </form>
+    <h2>グリッド</h2>
+    <canvas id="canvas" width="512px" height="64px" style="padding:10px; background-color: #EFEFEF"></canvas>
+    <button onclick="" value="保存">
+    <script src="GridGenerator.js"></script>
+</body>
+
+</html>
